@@ -717,8 +717,8 @@
 Makefile
 board.c
 board.h
-board.mk
 chconf.h
 halconf.h
+link.ld
 main.c
 mcuconf.h
