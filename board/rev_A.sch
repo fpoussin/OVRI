@@ -7895,6 +7895,7 @@ Source: http://www.jst.com .. eZH.pdf</description>
 <part name="C1" library="resistor" deviceset="C-US" device="C0603" value="100nF"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="C4" library="resistor" deviceset="C-US" device="C0603" value="1uF"/>
+<part name="C5" library="resistor" deviceset="C-US" device="C0603" value="2.2uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -7929,7 +7930,7 @@ Source: http://www.jst.com .. eZH.pdf</description>
 <instance part="C2" gate="G$1" x="40.64" y="91.44"/>
 <instance part="C3" gate="G$1" x="40.64" y="58.42"/>
 <instance part="GND8" gate="1" x="40.64" y="50.8"/>
-<instance part="GND9" gate="1" x="40.64" y="83.82"/>
+<instance part="GND9" gate="1" x="50.8" y="83.82"/>
 <instance part="R1" gate="G$1" x="201.93" y="87.63" smashed="yes" rot="R90">
 <attribute name="NAME" x="200.4314" y="83.82" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="200.152" y="87.63" size="1.778" layer="96" rot="R90"/>
@@ -7985,6 +7986,7 @@ Source: http://www.jst.com .. eZH.pdf</description>
 <instance part="C1" gate="G$1" x="64.77" y="20.32" rot="MR0"/>
 <instance part="GND5" gate="1" x="29.21" y="17.78"/>
 <instance part="C4" gate="G$1" x="59.69" y="27.94" rot="MR0"/>
+<instance part="C5" gate="G$1" x="50.8" y="91.44"/>
 </instances>
 <busses>
 </busses>
@@ -8046,6 +8048,9 @@ Source: http://www.jst.com .. eZH.pdf</description>
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="GND9" gate="1" pin="GND"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+<junction x="50.8" y="86.36"/>
+<wire x1="50.8" y1="86.36" x2="40.64" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND4" gate="1" pin="GND"/>
@@ -8089,6 +8094,8 @@ Source: http://www.jst.com .. eZH.pdf</description>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <junction x="40.64" y="93.98"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="93.98" x2="40.64" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="PWR" pin="VDD@2"/>
