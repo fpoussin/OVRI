@@ -1,0 +1,9 @@
+code/Chibios*
+code/app/build
+code/app/.dep
+*.o
+*.user
+*.b#*
+*.s#*
+*.lck
+
