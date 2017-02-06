@@ -51,7 +51,7 @@
 #define STM32_PPRE1                         STM32_PPRE1_DIV2
 #define STM32_PPRE2                         STM32_PPRE2_DIV2
 #define STM32_MCOSEL                        STM32_MCOSEL_NOCLOCK
-#define STM32_ADC12PRES                     STM32_ADC12PRES_DIV1
+#define STM32_ADC12PRES                     STM32_ADC12PRES_DIV2
 #define STM32_USART1SW                      STM32_USART1SW_PCLK
 #define STM32_USART2SW                      STM32_USART2SW_PCLK
 #define STM32_USART3SW                      STM32_USART3SW_PCLK
@@ -92,10 +92,13 @@
 #define STM32_DAC_DUAL_MODE                 FALSE
 #define STM32_DAC_USE_DAC1_CH1              TRUE
 #define STM32_DAC_USE_DAC1_CH2              TRUE
+#define STM32_DAC_USE_DAC2_CH1              TRUE
 #define STM32_DAC_DAC1_CH1_IRQ_PRIORITY     10
 #define STM32_DAC_DAC1_CH2_IRQ_PRIORITY     10
+#define STM32_DAC_DAC2_CH1_IRQ_PRIORITY     10
 #define STM32_DAC_DAC1_CH1_DMA_PRIORITY     2
 #define STM32_DAC_DAC1_CH2_DMA_PRIORITY     2
+#define STM32_DAC_DAC2_CH1_DMA_PRIORITY     2
 
 /*
  * EXT driver system settings.
