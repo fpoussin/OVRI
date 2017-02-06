@@ -4837,39 +4837,55 @@ Source: AVX .. aphvc.pdf</description>
 <rectangle x1="-0.15" y1="0.05" x2="0.15" y2="0.1" layer="51"/>
 <rectangle x1="-0.15" y1="-0.1" x2="0.15" y2="-0.05" layer="51"/>
 </package>
+<package name="PRL1632">
+<description>&lt;b&gt;PRL1632 are realized as 1W for 3.2 × 1.6mm(1206)&lt;/b&gt;&lt;p&gt;
+Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
+<wire x1="0.7275" y1="-1.5228" x2="-0.7277" y2="-1.5228" width="0.1524" layer="51"/>
+<wire x1="0.7275" y1="1.5228" x2="-0.7152" y2="1.5228" width="0.1524" layer="51"/>
+<smd name="2" x="0.822" y="0" dx="1" dy="3.2" layer="1"/>
+<smd name="1" x="-0.822" y="0" dx="1" dy="3.2" layer="1"/>
+<text x="-1.4" y="1.8" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.4" y="-3" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.8" y1="-1.6" x2="-0.4" y2="1.6" layer="51"/>
+<rectangle x1="0.4" y1="-1.6" x2="0.8" y2="1.6" layer="51"/>
+</package>
+<package name="HPC0201">
+<description>&lt;b&gt; &lt;/b&gt;&lt;p&gt;
+Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
+<smd name="1" x="-0.18" y="0" dx="0.2" dy="0.35" layer="1"/>
+<smd name="2" x="0.18" y="0" dx="0.2" dy="0.35" layer="1"/>
+<text x="-0.75" y="0.74" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.785" y="-1.865" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.305" y1="-0.15" x2="0.305" y2="0.15" layer="51"/>
+</package>
 </packages>
 <symbols>
-<symbol name="R-US">
-<wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.2032" layer="94"/>
-<wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.2032" layer="94"/>
-<wire x1="-1.524" y1="-1.016" x2="-0.889" y2="1.016" width="0.2032" layer="94"/>
-<wire x1="-0.889" y1="1.016" x2="-0.254" y2="-1.016" width="0.2032" layer="94"/>
-<wire x1="-0.254" y1="-1.016" x2="0.381" y2="1.016" width="0.2032" layer="94"/>
-<wire x1="0.381" y1="1.016" x2="1.016" y2="-1.016" width="0.2032" layer="94"/>
-<wire x1="1.016" y1="-1.016" x2="1.651" y2="1.016" width="0.2032" layer="94"/>
-<wire x1="1.651" y1="1.016" x2="2.286" y2="-1.016" width="0.2032" layer="94"/>
-<wire x1="2.286" y1="-1.016" x2="2.54" y2="0" width="0.2032" layer="94"/>
+<symbol name="R-EU-1">
+<wire x1="-2.54" y1="-0.889" x2="2.54" y2="-0.889" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0.889" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-0.889" x2="2.54" y2="0.889" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-0.889" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
 <text x="-3.81" y="1.4986" size="1.778" layer="95">&gt;NAME</text>
 <text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
-<symbol name="C-US-1">
-<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.016" x2="0" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="-1" x2="2.4892" y2="-1.8542" width="0.254" layer="94" curve="-37.878202"/>
-<wire x1="-2.4668" y1="-1.8504" x2="0" y2="-1.0161" width="0.254" layer="94" curve="-37.373024"/>
-<text x="1.016" y="0.635" size="1.778" layer="95">&gt;NAME</text>
-<text x="1.016" y="-4.191" size="1.778" layer="96">&gt;VALUE</text>
+<symbol name="C-EU-1">
+<wire x1="0" y1="0" x2="0" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-2.032" width="0.1524" layer="94"/>
+<text x="1.524" y="0.381" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.524" y="-4.699" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-2.032" y1="-2.032" x2="2.032" y2="-1.524" layer="94"/>
+<rectangle x1="-2.032" y1="-1.016" x2="2.032" y2="-0.508" layer="94"/>
 <pin name="1" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="R-US_" prefix="R" uservalue="yes">
-<description>&lt;B&gt;RESISTOR&lt;/B&gt;, American symbol</description>
+<deviceset name="R-EU_" prefix="R" uservalue="yes">
+<description>&lt;B&gt;RESISTOR&lt;/B&gt;, European symbol</description>
 <gates>
-<gate name="G$1" symbol="R-US" x="0" y="0"/>
+<gate name="G$1" symbol="R-EU-1" x="0" y="0"/>
 </gates>
 <devices>
 <device name="R0402" package="R0402">
@@ -5160,6 +5176,15 @@ Source: AVX .. aphvc.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="0204/2V" package="0204V">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 <device name="0207/10" package="0207/10">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
@@ -5224,6 +5249,15 @@ Source: AVX .. aphvc.pdf</description>
 </technologies>
 </device>
 <device name="0309/12" package="0309/12">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0309/V" package="0309V">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -5376,24 +5410,6 @@ Source: AVX .. aphvc.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="MELF0102AX" package="MINI_MELF-0102AX">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0922V" package="0922V">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
 <device name="MELF0102R" package="MINI_MELF-0102R">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
@@ -5448,6 +5464,15 @@ Source: AVX .. aphvc.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="0922V" package="0922V">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 <device name="RDH/15" package="RDH/15">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
@@ -5457,16 +5482,7 @@ Source: AVX .. aphvc.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="0204/2V" package="0204V">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0309/V" package="0309V">
+<device name="MELF0102AX" package="MINI_MELF-0102AX">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -5476,24 +5492,6 @@ Source: AVX .. aphvc.pdf</description>
 </technologies>
 </device>
 <device name="R0201" package="R0201">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="VMTA55" package="VMTA55">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="VMTB60" package="VMTB60">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -5539,6 +5537,24 @@ Source: AVX .. aphvc.pdf</description>
 </technologies>
 </device>
 <device name="VTA56" package="VTA56">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="VMTA55" package="VMTA55">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="VMTB60" package="VMTB60">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -5628,6 +5644,15 @@ Source: AVX .. aphvc.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="PRL1632" package="PRL1632">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 <device name="01005" package="R01005">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
@@ -5639,10 +5664,10 @@ Source: AVX .. aphvc.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="C-US" prefix="C" uservalue="yes">
-<description>&lt;B&gt;CAPACITOR&lt;/B&gt;, American symbol</description>
+<deviceset name="C-EU" prefix="C" uservalue="yes">
+<description>&lt;B&gt;CAPACITOR&lt;/B&gt;, European symbol</description>
 <gates>
-<gate name="G$1" symbol="C-US-1" x="0" y="0"/>
+<gate name="G$1" symbol="C-EU-1" x="0" y="0"/>
 </gates>
 <devices>
 <device name="C0402" package="C0402">
@@ -6303,6 +6328,15 @@ Source: AVX .. aphvc.pdf</description>
 </technologies>
 </device>
 <device name="C2225K" package="C2225K">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="HPC0201" package="HPC0201">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -7866,36 +7900,38 @@ Source: http://www.jst.com .. eZH.pdf</description>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="R4" library="resistor" deviceset="R-US_" device="R0603" value="470K"/>
-<part name="R5" library="resistor" deviceset="R-US_" device="R0603" value="470K"/>
-<part name="C2" library="resistor" deviceset="C-US" device="C0603" value="100nF"/>
-<part name="C3" library="resistor" deviceset="C-US" device="C0603" value="100nF"/>
+<part name="R4" library="resistor" deviceset="R-EU_" device="R0603" value="470K"/>
+<part name="R5" library="resistor" deviceset="R-EU_" device="R0603" value="470K"/>
+<part name="C2" library="resistor" deviceset="C-EU" device="C0603" value="100nF"/>
+<part name="C3" library="resistor" deviceset="C-EU" device="C0603" value="100nF"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
-<part name="R1" library="resistor" deviceset="R-US_" device="R0603" value="10K"/>
-<part name="R8" library="resistor" deviceset="R-US_" device="R0603" value="10K"/>
+<part name="R1" library="resistor" deviceset="R-EU_" device="R0603" value="10K"/>
+<part name="R8" library="resistor" deviceset="R-EU_" device="R0603" value="10K"/>
 <part name="D1" library="diode" deviceset="DIODE-2AC|CA" device="SOT23" value="BAV170"/>
 <part name="IC2" library="linear" deviceset="MCP602" device="SN" value="MCP6292"/>
-<part name="R2" library="resistor" deviceset="R-US_" device="R0603" value="470K"/>
-<part name="R3" library="resistor" deviceset="R-US_" device="R0603" value="470K"/>
-<part name="R6" library="resistor" deviceset="R-US_" device="R0603" value="10K"/>
-<part name="R7" library="resistor" deviceset="R-US_" device="R0603" value="10K"/>
+<part name="R2" library="resistor" deviceset="R-EU_" device="R0603" value="470K"/>
+<part name="R3" library="resistor" deviceset="R-EU_" device="R0603" value="470K"/>
+<part name="R6" library="resistor" deviceset="R-EU_" device="R0603" value="10K"/>
+<part name="R7" library="resistor" deviceset="R-EU_" device="R0603" value="10K"/>
 <part name="D2" library="diode" deviceset="DIODE-2AC|CA" device="SOT23" value="BAV170"/>
 <part name="J1" library="SparkFun-Connectors" deviceset="CONN_04" device="LOCK"/>
 <part name="J2" library="SparkFun-Connectors" deviceset="CONN_04" device="LOCK"/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
 <part name="D3" library="SparkFun-LED" deviceset="LED-GREEN" device="0603" value="GREEN"/>
-<part name="R9" library="resistor" deviceset="R-US_" device="R0603" value="1K"/>
+<part name="R9" library="resistor" deviceset="R-EU_" device="R0603" value="1K"/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="J_SER" library="con-jst" deviceset="?4B-ZR" device="B" value="JST-ZH"/>
 <part name="J_DBG" library="con-jst" deviceset="?4B-ZR" device="B" value="JST-ZH"/>
-<part name="R10" library="resistor" deviceset="R-US_" device="R0603" value="10K"/>
+<part name="R10" library="resistor" deviceset="R-EU_" device="R0603" value="10K"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="C1" library="resistor" deviceset="C-US" device="C0603" value="100nF"/>
+<part name="C1" library="resistor" deviceset="C-EU" device="C0603" value="100nF"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
-<part name="C4" library="resistor" deviceset="C-US" device="C0603" value="1uF"/>
-<part name="C5" library="resistor" deviceset="C-US" device="C0603" value="2.2uF"/>
+<part name="C4" library="resistor" deviceset="C-EU" device="C0603" value="1uF"/>
+<part name="C5" library="resistor" deviceset="C-EU" device="C0603" value="2.2uF"/>
+<part name="R11" library="resistor" deviceset="R-EU_" device="0411/12" value="5K"/>
+<part name="R12" library="resistor" deviceset="R-EU_" device="0411/12" value="5K"/>
 </parts>
 <sheets>
 <sheet>
@@ -7905,6 +7941,7 @@ Source: http://www.jst.com .. eZH.pdf</description>
 <text x="127" y="66.04" size="1.778" layer="91">ADC1 Tied to COMP4 INP</text>
 <text x="20.32" y="7.62" size="1.778" layer="91">Open Drain, 3.3V tolerant</text>
 <text x="62.23" y="109.22" size="1.778" layer="91">Pin compatible with Discovery board debug port</text>
+<text x="100.33" y="-3.81" size="1.778" layer="91">Shunts</text>
 </plain>
 <instances>
 <instance part="IC1" gate="MCU" x="101.6" y="55.88"/>
@@ -7987,6 +8024,8 @@ Source: http://www.jst.com .. eZH.pdf</description>
 <instance part="GND5" gate="1" x="29.21" y="17.78"/>
 <instance part="C4" gate="G$1" x="59.69" y="27.94" rot="MR0"/>
 <instance part="C5" gate="G$1" x="50.8" y="91.44"/>
+<instance part="R11" gate="G$1" x="105.41" y="11.43"/>
+<instance part="R12" gate="G$1" x="105.41" y="3.81"/>
 </instances>
 <busses>
 </busses>
@@ -8216,6 +8255,11 @@ Source: http://www.jst.com .. eZH.pdf</description>
 <wire x1="20.32" y1="26.67" x2="29.21" y2="26.67" width="0.1524" layer="91"/>
 <label x="20.32" y="26.67" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="100.33" y1="11.43" x2="88.9" y2="11.43" width="0.1524" layer="91"/>
+<label x="100.33" y="11.43" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="VR1-" class="0">
 <segment>
@@ -8227,6 +8271,11 @@ Source: http://www.jst.com .. eZH.pdf</description>
 <pinref part="J1" gate="G$1" pin="2"/>
 <wire x1="20.32" y1="29.21" x2="29.21" y2="29.21" width="0.1524" layer="91"/>
 <label x="20.32" y="29.21" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="110.49" y1="11.43" x2="121.92" y2="11.43" width="0.1524" layer="91"/>
+<label x="110.49" y="11.43" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -8392,6 +8441,11 @@ Source: http://www.jst.com .. eZH.pdf</description>
 <wire x1="20.32" y1="31.75" x2="29.21" y2="31.75" width="0.1524" layer="91"/>
 <label x="20.32" y="31.75" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R12" gate="G$1" pin="1"/>
+<wire x1="100.33" y1="3.81" x2="88.9" y2="3.81" width="0.1524" layer="91"/>
+<label x="100.33" y="3.81" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="VR2-" class="0">
 <segment>
@@ -8403,6 +8457,11 @@ Source: http://www.jst.com .. eZH.pdf</description>
 <pinref part="J1" gate="G$1" pin="4"/>
 <wire x1="20.32" y1="34.29" x2="29.21" y2="34.29" width="0.1524" layer="91"/>
 <label x="20.32" y="34.29" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R12" gate="G$1" pin="2"/>
+<wire x1="110.49" y1="3.81" x2="121.92" y2="3.81" width="0.1524" layer="91"/>
+<label x="110.49" y="3.81" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DAC1_2" class="0">
