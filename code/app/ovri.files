@@ -514,3 +514,7 @@ halconf.h
 link.ld
 main.c
 mcuconf.h
+halconf_community.h
+halconf.h
+mcuconf_community.h
+mcuconf.h
